@@ -127,12 +127,6 @@ if __name__ == "__main__":
     root.mainloop()
 
 ```
-
-![image-20221106224559843](C:\Users\lin\AppData\Roaming\Typora\typora-user-images\image-20221106224559843.png)
-
-
-
-```
 #!/usr/bin/python3
 import tkinter as tk
 
@@ -239,10 +233,6 @@ pyinstaller -Fw
 ​	增加互动功能
 
 ​	增加对局记录
-
-#### 1,图形化
-
-<img src="C:\Users\lin\AppData\Roaming\Typora\typora-user-images\image-20221127144339857.png" alt="image-20221127144339857" style="zoom:50%;" />
 
 ```
 显示一个Windows窗口，初始大小为800x600。
@@ -536,3 +526,5 @@ print("一共回答了",j,"次")
 ```
 
 ​	client
+
+
