@@ -249,7 +249,7 @@ def main_soneui():
 
     sk = socket.socket(socket.AF_INET,socket.SOCK_STREAM)
 
-    host ="192.168.36.36"
+    host ="127.0.0.1"
     port = 9090
 
     sk.connect((host, port))
