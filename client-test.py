@@ -47,3 +47,36 @@ while True:
 
     
 client_01.close()
+
+
+
+test-2
+while True:
+    info = input('>>>').encode("utf-8")
+
+    client_01.send(info)
+    print(info)
+    msg = client_01.recv(1024).decode('utf-8')#接收信息
+    print(msg)
+    if msg == "over":
+        print("you lose!!")
+        break
+    a=msg.split("|")
+    print(a)#a[you]
+    # print(a[1])
+    info=int(info)
+    print(info)#33
+    # num=int(a[1])
+    b=a
+    print(b)
+
+    if msg == 'bye':  #当收到bye时，给服务器回复bye，跳出循环。
+        client_01.send(b'bye')
+        break
+
+    # if info == num:  #当收到bye时，给服务器回复bye，跳出循环。
+    #     client_01.send('you win!!'.encode("utf8"))
+    #     break
+
+    
+client_01.close()
